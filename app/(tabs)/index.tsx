@@ -28,7 +28,7 @@ export default function HomeScreen() {
       style={{ paddingTop: insets.top + 24 }}
     >
       <Box paddingHorizontal="m" paddingBottom="l">
-        <Text variant="header">🐝 Drinkbee</Text>
+        <Text variant="header">DrinkBee Games</Text>
       </Box>
 
       <CategoryTabs
