@@ -11,7 +11,8 @@ type Game = {
   id: string;
   title: string;
   description: string;
-  imageUrl: string;
+  emoji: string;
+  color: string;
 };
 
 // Temporary mock data - this will be replaced with actual API data
@@ -21,14 +22,16 @@ const mockGames: Game[] = [
     title: "Never Have I Ever",
     description:
       "A classic drinking game where players take turns making statements about things they have never done.",
-    imageUrl: "https://example.com/never-have-i-ever.jpg",
+    emoji: "🙅‍♂️",
+    color: "#f59e0b",
   },
   {
     id: "2",
     title: "Kings Cup",
     description:
       "A card-based drinking game where each card represents a different rule or action.",
-    imageUrl: "https://example.com/kings-cup.jpg",
+    emoji: "👑",
+    color: "#f59e0b",
   },
   // Add more mock games as needed
 ];
@@ -49,7 +52,8 @@ export default function GamesScreen() {
     <GameCard
       title={item.title}
       description={item.description}
-      imageUrl={item.imageUrl}
+      emoji={item.emoji}
+      color={item.color}
       onPress={() => {
         // Navigate to game details screen
         // navigation.navigate('GameDetails', { gameId: item.id });
